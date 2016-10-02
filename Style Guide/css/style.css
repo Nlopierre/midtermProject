@@ -1,0 +1,87 @@
+
+/* Style Guide */
+
+body{
+    
+    font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+}
+
+p{
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+h1, h2, h3, h4{
+    margin-left: 5%;
+}
+
+#main-title{
+    width:90%;
+    margin-left:auto;
+    margin-right:auto;   
+}
+
+#main-title h1{
+    margin-left: -3%;
+    text-align: center;
+    font-size: 40px;
+    
+}
+#main-title p{
+    text-align: center;
+}
+
+.example{
+    border: 1px solid black;
+    border-radius: 20px;
+    background-color: #f9f9f9;
+    margin-left: auto;
+    margin-right: auto;
+    width: 70%;
+    text-align: center;
+    font-family: monospace;
+}
+
+#directory{
+    border: 1px solid black;
+    border-radius: 20px;
+    background-color: #f9f9f9;
+    margin-left: auto;
+    margin-right: auto;
+    width: 28%;
+}
+
+#font-sizes table{
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+#font-sizes td{
+    padding-right: 20px;
+    padding-left: 20px;
+    border-bottom: 1px solid silver;
+    margin-left: -5%;
+    margin-left: 10%;
+    width:100px;
+}
+
+#font-sizes p{
+}
+
+#layouts-grids img{
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+#buttons{
+    margin-left: auto;
+    margin-right: auto;
+    width:50%;
+    
+}
+
+.subtle{
+    font-size: 12px; 
+    color: darkgray;
+}
