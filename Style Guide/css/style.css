@@ -27,6 +27,11 @@ h1, h2, h3, h4{
     font-size: 40px;
     
 }
+#main-title h4{
+    margin-left: -3%;
+    text-align: center;
+}
+
 #main-title p{
     text-align: center;
 }
@@ -84,4 +89,45 @@ h1, h2, h3, h4{
 .subtle{
     font-size: 12px; 
     color: darkgray;
+}
+
+#colors table{
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    padding: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border: 1px solid #aaaaaa;
+}
+
+#colors th, #colors td{
+    padding: 10px;
+    margin:0px;
+    
+}
+
+#colors #green{
+    background-color: #33cc33;
+}
+#colors #white{
+    background-color: #ffffff;
+}
+#colors #black{
+    background-color: #1a1a1a;
+    color: white;
+}
+#colors #almost-white{
+    background-color: #f9f9f9;
+}
+#colors #blue{
+    background-color: #49aaff;
+}
+    
+figure{
+    margin-left: 10%;
+}
+
+h5{
+    text-align: center;
 }
