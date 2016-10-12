@@ -1,7 +1,7 @@
 body{
     font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
     margin: 0px;
-    height:850px;
+    height:1350px;
 }
 
 .container-top{
@@ -66,27 +66,29 @@ body{
 .container-mid{
     position:relative;
     width: 98%;
-    height: 600px; 
+    height: 44.4%; 
     margin-left: 1%
 }
 
 
 .container-mid #carousel{
     position: absolute;
-    width: 75%;
+    width: 70%;
     height: 100%;
 }
 
 .container-mid #carousel img{
     position: absolute;
+    height: 100%;
+    width:100%;
 }
 
 .container-mid #links{
     position: relative;
     float:right;
     width:30%;
-    height:600px;;
-    margin-right:1%;
+    height:100%;
+    margin-right:0.5%;
 }
 
 .container-mid #links ul{
@@ -141,6 +143,10 @@ footer p{
 }
 
 @media only screen and (max-width: 600px){
+    body{
+        height: 750px;
+    }
+    
     .container-mid #carousel{
         display: none;
     }
@@ -148,4 +154,6 @@ footer p{
     .container-mid #links{
         width:100%;
     }
+    
+    
 }
