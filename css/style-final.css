@@ -23,9 +23,14 @@ body{
     height:auto;
 }
 
+.container-top #logo img{
+    width:100;
+    height:auto;
+}
+
 .container-login{
     height: auto;
-    max-width:auto;
+    max-width: auto;
     float:right;
     margin-top: 2%;
     margin-right: 2%;
@@ -169,6 +174,7 @@ footer {
     margin: auto;
     width: 80%;
     text-align: center;
+    height: 20%;
 }
 
 footer ul li {
@@ -189,6 +195,10 @@ footer p {
 }
 
 @media only screen and (max-width: 600px) { 
+    
+    #logo img{
+        width:50px;
+    }
     
     /* Correct position of login and register*/
     
@@ -221,10 +231,82 @@ footer p {
     
     footer{
         width:90%;
+        height:10%;
     }
 }
 
 @media only screen and (max-width:768px) {
     
+    
+    #logo img{
+        width: 75px;
+    }
+    
+    #explain-debt-bid{
+        /*Make it go a little bit up*/    
+    }
+    
+    #explain-debt-bid h1{
+        24px;
+    }
+    
+    #explain-debt-bid p{
+        display: none;
+    }
+    
+    .container-mid{
+        height:300px;
+    }
+    
+    
+    .container-mid #carousel{
+        display: none;
+    }
+    
+    .container-mid #getting-started-mobile{
+        display: inline-block;
+        position: relative;
+        width:45%;
+        margin: 0;
+        
+    }
+    
+    #getting-started-mobile{
+        list-style-type: none;
+        background-color: #49aaff;
+        margin: 0;
+        height: 100%;
+        padding-left: 0;
+    }
+    
+    #getting-started-mobile a{
+        text-align: center;
+        height: 100%;
+        display: block;
+        color: white;
+        text-decoration: none;
+    }
+    
+    .container-mid #links{
+        width:50%;   
+        display: inline-block;
+        margin: 0;
+    }
+    
+    #getting-started{
+        display:none;
+    }
+    
+    #getting-started div img{
+        display: none;
+    }
+    
+    #links li a:hover:not(.active) + div{
+        visibility:hidden;
+    }
+    
+    .container-mid #links ul li {
+        height: 50%;
+    }
 
 }
