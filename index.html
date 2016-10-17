@@ -2,8 +2,8 @@
 <html>
 
 <head>
-    <link href="css/style.css" type="text/css" rel="stylesheet" />
-    <link rel="icon" href="#" alt="Logo" title="logo">
+    <link href="css/style-final.css" type="text/css" rel="stylesheet" />
+    <link rel="icon" href="img/logo.ico" alt="Logo" title="logo">
     <title> Debt Bidder</title>
 </head>
 
@@ -13,25 +13,18 @@
             <div id=logo>
                 <img src="img/Logo%20transparent%20background.png" alt="Logo" />
             </div>
-            <div id="login">
-                <a href="#">
-                    <svg width="150" height="50">
-                                    <rect rx="10" ry="10" x="23" y="10" width="120" height="40" fill=#33cc33 /> 
-                                    <text fill=#ffffff font-size="16" x="60" y="35">Login</text>
-                        Login
-                                </svg>
+            <div class="container-login">
+                <div id="login">
+                    <a href="#">
+                   Login
                 </a>
-            </div>
-            <div id="register">
-                <a href="#">
-                    <svg width="150" height="50">
-                                    <rect rx="10" ry="10" x="15" y="10" width="120" height="40" fill=#33cc33 /> 
-                                    <text fill=#ffffff font-size="16" x="43" y="35">Register</text>
-                                        Register
-                                </svg>
+                </div>
+                <div id="register">
+                    <a href="#">
+                    Register
                 </a>
+                </div>
             </div>
-
         </div>
         <div id="explain-debt-bid">
             <h1> Debt Bidder</h1>
@@ -43,38 +36,53 @@
     </div>
     <div class="container-mid">
         <div id="carousel">
-            <img src="img/getting-started-carousel.jpg" alt="carousel1" />
-            <img src="img/Security-carousel.jpg" alt="carousel2" />
-            <img src="img/Help-center-carousel.jpg" alt="carousel3" />
+            <img id="getting-started-img" src="img/getting-started-carousel.jpg" alt="carousel1" />
+            <img id="security-img" src="img/Security-carousel.jpg" alt="carousel2" />
+            <img id="help-center-img" src="img/Help-center-carousel.jpg" alt="carousel3" />
+        </div>
+        <div id="getting-started-mobile">
+            <a href="">
+                Getting Started
+            </a>
         </div>
         <div id="links">
             <ul>
-                <li>
-                    <a href="#">
+                <li id="getting-started">
+                    <a id="getting-started-link" href="#">
                        Getting Started
                     </a>
+                    <div>
+                        <img id="getting-started-img" src="img/getting-started-carousel.jpg" alt="carousel1" />
+                    </div>
                 </li>
-                <li>
-                    <a href="#">
+                <li id="security">
+                    <a id="security-link" href="">
                         Security
                     </a>
+                    <div>
+                        <img id="security-img" src="img/Security-carousel.jpg" alt="carousel2" />
+                    </div>
                 </li>
-                <li>
-                    <a href="#">    
+                <li id="help-center">
+                    <a id="help-center-link" href="#">    
                         Help Center
                     </a>
+                    <div>
+                        <img id="help-center-img" src="img/Help-center-carousel.jpg" alt="carousel3" />
+                    </div>
                 </li>
             </ul>
         </div>
-        </div>
-        <footer>
-            <ul>
-                <li><a href="#">Contact us</a></li>
-                <li><a href="#">About Us</a></li>
-                <li><a href="#">Legal Terms and Conditions</a></li>
-            </ul>
-            <p>All content on this page is owned by Nicolas Lopierre Aguirre © 2016</p>
-        </footer>
+    </div>
+    <footer>
+        <ul>
+            <li><a href="#">Contact us</a></li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Legal Terms and Conditions</a></li>
+        </ul>
+        <p>Part content on this page is owned by Nicolas Lopierre Aguirre &copy; 2016</p>
+        <p>The images were taken from flickr (I'll add the credit page later)</p>
+    </footer>
 </body>
 
 </html>

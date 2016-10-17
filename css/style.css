@@ -1,110 +1,106 @@
-body{
+body {
     font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
     margin: 0px;
-    height:1350px;
+    height: 1350px;
 }
 
-.container-top{
+.container-top {
     position: relative;
+    
 }
- 
-#header div{
+
+#header div {
     display: inline;
     position: absolute;
     z-index: 2;
-    top:1%;
-    width:auto;
-    height:auto;
+    top: 1%;
+    width: auto;
+    height: auto;
 }
 
-#logo{
-    left:1%;
-    width:100%;
+#logo {
+    left: 1%;
+    width: 100%;
     height: 100%;
 }
 
-#login{
-    left:78%;
-        
+#login {
+    left: 78%;
 }
 
-#register{
-    left:89%;
+#register {
+    left: 89%;
 }
 
-
-
-#explain-debt-bid p{
+#explain-debt-bid p {
     font-size: 22px;
 }
 
-#explain-debt-bid h1{
+#explain-debt-bid h1 {
     font-size: 60px;
 }
 
-#explain-debt-bid{
+#explain-debt-bid {
     color: white;
     position: absolute;
     z-index: 2;
-    top:35%;
-    margin:auto;
-    width:50%;
-    left:25%;
+    top: 35%;
+    margin: auto;
+    width: 50%;
+    left: 25%;
     text-align: center;
     font-size-adjust: auto;
 }
 
-.container-top #background-top img{
+.container-top #background-top img {
     position: relative;
     z-index: 1;
     opacity: 0.8;
-    height:100%;
-    width:100%;
+    height: 100%;
+    width: 100%;
 }
 
-
-.container-mid{
-    position:relative;
+.container-mid {
+    position: relative;
     width: 98%;
-    height: 44.4%; 
+    height: 44.4%;
     margin-left: 1%
 }
 
-
-.container-mid #carousel{
+.container-mid #carousel {
     position: absolute;
     width: 70%;
     height: 100%;
 }
 
-.container-mid #carousel img{
+.container-mid #carousel img {
     position: absolute;
     height: 100%;
-    width:100%;
+    width: 100%;
 }
 
-.container-mid #links{
+.container-mid #links {
     position: relative;
-    float:right;
-    width:30%;
-    height:100%;
-    margin-right:0.5%;
+    float: right;
+    width: 30%;
+    height: 100%;
+    margin-right: 0.5%;
 }
 
-.container-mid #links ul{
+.container-mid #links ul {
     list-style-type: none;
     background-color: #49aaff;
     margin: 0;
-    height:100%;
-    padding-left: 0; 
+    height: 100%;
+    padding-left: 0;
 }
 
-.container-mid #links ul li{
-    height:33.3%;
+.container-mid #links ul li {
+    height: 33.3%;
     text-align: center;
 }
 
-.container-mid #links ul li a{
+.container-mid #links ul li a {
     top: 50%;
     text-align: center;
     height: 100%;
@@ -113,47 +109,111 @@ body{
     text-decoration: none;
 }
 
+.container-mid #links-mobile {
+    display: none;
+}
+
 li a:hover:not(.active) {
     background-color: #2b6699;
     color: white;
 }
 
-footer{
+footer {
     position: relative;
     margin: auto;
     width: 80%;
     text-align: center;
 }
 
-footer ul li{
+footer ul li {
     list-style-type: none;
-    margin:10%;
-    padding:0px;
+    margin: 10%;
+    padding: 0px;
     display: inline;
 }
 
-footer ul li a{
-    font-size: 12px; 
+footer ul li a {
+    font-size: 12px;
     color: darkgray;
 }
 
-footer p{
-        font-size: 12px; 
+footer p {
+    font-size: 12px;
     color: darkgray
 }
 
-@media only screen and (max-width: 600px){
-    body{
+@media only screen and (max-width: 600px) {
+    body {
         height: 750px;
     }
-    
-    .container-mid #carousel{
+    .container-mid #carousel {
         display: none;
     }
-    
-    .container-mid #links{
-        width:100%;
+    .container-mid #links {
+        width: 100%;
     }
     
+    .container-mid #links-mobile{
+        display: none;
+    }
+}
+
+@media only screen and (max-width:768px) {
+    #explain-debt-bid p {
+        display: none;
+    }
+    .container-mid{ 
+        height:500px;
+    }
+    .container-mid #carousel,
+    .container-mid #links {
+        display: none;
+    }
+    .container-mid #links-mobile {
+        display: block;
+        width:100%;
+        height: 100;
+    }
+    .container-mid #links-mobile div{
+        display:inline-block;
+    }
+    .container-mid #links-mobile #getting-started-mobile{
+        background-color: #49aaff;
+        margin: 0;
+        height: 100%;
+        padding-left: 0;
+        width: 50%;
+        text-align: center;
+    }
+    .container-mid #links-mobile #getting-started-mobile a{
+        text-decoration: none;
+        color: white;
+    }
+    
+    #other-links-mobile{
+        width:50%;
+        float:right;
+    }
+    
+    #other-links-mobile ul{
+        list-style-type: none;
+    background-color: #49aaff;
+    margin: 0;
+    height: 100%;
+    padding-left: 0;
+    }
+    
+    #other-links-mobile ul li{
+        height: 50%;
+        text-align: center;
+    }
+    #other-links-mobile ul li a{
+        top: 50%;
+        text-align: center;
+        height: 100%;
+        display: block;
+        color: white;
+        text-decoration: none;
+    }
     
 }
