@@ -78,7 +78,6 @@ body{
     text-align: center;
     font-size-adjust: auto;
 }
-
 #explain-debt-bid p {
     font-size: 22px;
 }
@@ -93,7 +92,7 @@ body{
 
 .container-mid{
     max-width: 100%;
-    postion:relative;
+    position:relative;
     background-color: #1a1a1a;
     margin:0;
     padding:1%;
@@ -113,6 +112,19 @@ body{
 .container-mid #carousel{
     position: relative;
     width:69%;
+}
+
+.container-mid #carousel img{
+    opacity: 0.6;
+}
+
+.container-mid #carousel p{
+    position: absolute;
+    top: 45%;
+    left: 5%;
+    color: white;
+    font-size: 18px;
+    width: 85%;
 }
 
 
@@ -144,11 +156,32 @@ body{
     text-decoration: none;
 }
 
-#links ul li div{
+#links ul li #link-info{
     position:absolute;
     left: calc(-67vw);
     top: calc(-0.05vw);
     visibility: hidden;
+}
+
+#links ul li #link-info #color-image{
+    left: -7px;
+    position:absolute;
+    visibility: inherit;
+    background-color: #1a1a1a;
+    width: 101%;
+    height: 600px;
+}
+
+#links ul li div img{
+    opacity: 0.4;
+}
+
+#links ul li div p{
+    position: absolute;
+    top: 45%;
+    left: 10%;
+    color: white;
+    font-size: 18px;
 }
 
 #getting-started div{
@@ -160,7 +193,7 @@ body{
     color: white;
 }
 
-#links li a:hover:not(.active) + div{
+#links li a:hover:not(.active) + #link-info{
     visibility: visible;
 }
 
@@ -298,9 +331,9 @@ footer p {
         display: none;
     }
     
-    #links li a:hover:not(.active) + div{
-        visibility:hidden;
-    }
+    #links li a:hover:not(.active) + #link-info{
+    visibility: hidden;
+}
     
     .container-mid #links ul li {
         height: 50%;
