@@ -68,65 +68,38 @@ body{
 }
 
 .container-mid{
-    
-    width:100%;
-    padding: 1%;
+    width: 100%;
     display: flex;
     flex-direction: column;
 }
 
-.container-mid #total-debt{
-    width:90%;
+.container-mid #message{
+    width:80%;
     margin: auto;
-    padding-top: -1%;
-    padding-bottom: 2%;
+    text-align: center;
 }
 
-.container-mid #total-debt h2{
-    margin: auto;
-    width: 25%;
+.container-mid #options{
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-self:center;
 }
 
-.container-mid #activity{
-    width:100%;
+.container-mid #options div{
+    padding: 1%;
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
 }
 
-.container-mid #activity table{
-    width:100%;
-    padding: 2%;
-}
-
-.container-mid #activity table th{
-    padding: 0px 5px 20px 5px;
-    align-content: flex-start;
-}
-.container-mid #activity table td{
-    border-bottom: 1px solid;
-    border-bottom-color: darkgray;
-    padding:50px 10px 0px 0px;
-    color: #1a1a1a;
-}
-
-.container-mid #activity table td ul li a{
+.container-mid #options a{
+    padding: 10px 15%;
+    border-radius: 5px;
     text-decoration: none;
-    
+    color: white;
+    background-color: #49aaff
 }
-.container-mid #activity table td ul{
-    list-style-type: none;
-}
-
-.container-mid #activity #amount, #interest-rate, #savings{
-    font-weight: bold;
-}
-
-.container-mid #activity #savings{
-    color: #33cc33;
-}
-
-.container-mid #activity #amount, .container-mid #activity #interest-rate{
-    color: #49aaff;
-}
-
 
 .container-bottom {
     position: relative;
@@ -171,24 +144,9 @@ body{
     .container-top nav a{
         margin: 1.5%;
     }
-    
-    #borrower{
-        display: none;
-    }
-    
     footer{
         width:90%;
         height:10%;
-    }
-    
-    
-}
-
-
-
-@media only screen and (max-width:650px){
-    #debt-per-card{
-        display: none;
     }
     
 }
@@ -337,13 +295,24 @@ body{
         color: white;
     }
     
-    #credit-card{
-        display: none;
+    .container-mid #options{
+        text-align: center;
     }
     
-}
-@media only screen and (max-width:435px){
-    #exp-date{
-        display: none;
+    .container-mid #options div{
+        padding: 10px 0px;
+    }
+    
+    .container-mid #options #top-options{
+        flex-direction: column;
+    }
+    
+    .container-mid #options #top-options a:first-child{
+        margin-bottom: 4%;
+    }
+    
+    .container-mid #options #bot-options a{
+        width: 100%;
+        
     }
 }

@@ -67,6 +67,78 @@ body{
     display: none;
 }
 
+.container-mid{
+    width: 100%;
+}
+
+.container-mid #options{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.container-mid #options div{
+    border-radius: 10px;
+    display:flex;
+    align-self: flex-start;
+}
+
+#top-options, #bot-options{
+    margin: 1% 0;
+}
+
+.container-mid #options #top-options{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-self: flex-start;
+    
+}
+
+
+.container-mid #options #bot-options{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-self: flex-start;
+}
+
+#top-options div, #bot-options div{
+    background-color: #49aaff
+}
+
+.container-mid #options #top-options div:hover, .container-mid #options #bot-options div:hover{
+    background-color: #24557f
+}
+
+.container-mid #options #top-options div{
+    width:40%;
+   
+}
+
+.container-mid #options #bot-options div{
+    width:30%;
+}
+
+#top-options a, #bot-options a{
+    width: 100%;
+    text-decoration: none;
+    color: white;
+    text-align: center;
+}
+
+.container-mid #options p{
+    text-align: center;
+    color: white;
+}
+
+#top-options p, #bot-options p{
+        width: 90%;
+        margin: 2% auto;
+    }
 
 .container-bottom {
     position: relative;
@@ -148,7 +220,7 @@ body{
            
         -webkit-user-select: none;
         user-select:none;
-    }
+    } 
     
     .container-burger input{
         display: block;
@@ -260,5 +332,38 @@ body{
         margin:0px;
         background-color: #33cc33;
         color: white;
+    }
+}
+
+
+@media only screen and (max-width:650px){
+    
+    .container-mid #options div{
+        margin:0;
+    }
+    
+    .container-mid #options #top-options{
+        flex-direction: column;
+        justify-content: center;
+        align-self: center;
+        margin: 1% 0; 
+    }
+    .container-mid #options #bot-options{
+        flex-direction: column;
+        justify-content: center;
+        align-self: center;
+    }
+    
+    .container-mid #options #top-options div{
+        width: 100%
+    }
+    
+    .container-mid #options #top-options div:first-child{
+        margin-bottom: 1%;
+    }
+    
+    .container-mid #options #bot-options div{
+        margin-bottom: 1%;
+        width: 100%;
     }
 }
